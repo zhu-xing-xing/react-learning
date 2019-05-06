@@ -1,5 +1,8 @@
-var func = str => {
-  document.getElementById('app').innerHTML = str
-}
+import React from 'react'
+import ReactDom from 'react-dom'
+import getRouter from './router/index'
 
-func('我现在在使用Babel!')
+ReactDom.render(
+  getRouter(),
+  document.getElementById('app'),
+)
