@@ -2387,6 +2387,11 @@ var _index2 = _interopRequireDefault(_index);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+if (false) {
+  console.log('????');
+  module.hot.accept();
+}
+
 _reactDom2.default.render((0, _index2.default)(), document.getElementById('app'));
 
 /***/ }),
@@ -27154,13 +27159,13 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouterDom = __webpack_require__(28);
 
-var _index = __webpack_require__(43);
+var _Home = __webpack_require__(43);
 
-var _index2 = _interopRequireDefault(_index);
+var _Home2 = _interopRequireDefault(_Home);
 
-var _index3 = __webpack_require__(44);
+var _Page = __webpack_require__(44);
 
-var _index4 = _interopRequireDefault(_index3);
+var _Page2 = _interopRequireDefault(_Page);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27196,8 +27201,8 @@ var getRouter = function getRouter() {
             _react2.default.createElement(
                 _reactRouterDom.Switch,
                 null,
-                _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _index2.default }),
-                _react2.default.createElement(_reactRouterDom.Route, { path: '/page1', component: _index4.default })
+                _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _Home2.default }),
+                _react2.default.createElement(_reactRouterDom.Route, { path: '/page1', component: _Page2.default })
             )
         )
     );
@@ -29477,7 +29482,7 @@ var Home = function (_Component) {
             return _react2.default.createElement(
                 'div',
                 null,
-                'this is home'
+                'this is home111bbbbv'
             );
         }
     }]);
@@ -29527,7 +29532,7 @@ var Home = function (_Component) {
             return _react2.default.createElement(
                 'div',
                 null,
-                'this is Page1'
+                'this is Page'
             );
         }
     }]);
